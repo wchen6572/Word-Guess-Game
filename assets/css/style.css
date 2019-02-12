@@ -1,0 +1,77 @@
+body{
+    background-image: url(../images/pizza-background.jpg);
+
+}
+h1{
+    font-family: 'Georgia', Times, "Times New Roman", serif;
+    font-size: 100px;
+}
+p {
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color:black;
+    font-size: 20px;
+}
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+
+.jumbotron{
+    /* height: 80px; */
+}
+
+#gameImage{
+    height: 400px;
+    width:400px;
+}
+
+
+
+#gameProgress{
+    text-align:center;
+    color: #777777;
+
+}
+#livesDisplay{
+    text-align:center;
+    color: #777777;
+
+}
+#letDisplay{
+    text-align:center;
+    color: #777777;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Tile1{
+    float: left;
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-image: url(../images/stars.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 20px;
+    
+}
+
+
+
+
+
+

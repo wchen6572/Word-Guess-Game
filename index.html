@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+
+    <audio id="myAudio">
+        <source src="assets/Jailhouse_Rock.mp3" type="audio/mp3">
+    </audio>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+    <title>Pizza Hangman</title>
+
+    </head>
+
+
+
+    <body>
+            <div class="jumbotron bg-info text-center">
+                    <h1>Pizza Hangman</h1>
+                </div>
+
+        <div class = "container">
+           
+            
+            <div class = "row">
+                    <div class="col-sm-6 bg-light ">
+                            <p class = "gameProgressDisp text-center"> Game Progress</p>
+                            <p id="gameProgress"></p>
+        
+                            <p class="incorrectLetters text-center">Incorrectly Guessed Letters</p>
+                            <p id="letDisplay">___</p>
+                            
+                            <p class="lives text-center">Lives remaining</p>
+                            <p id="livesDisplay"> 10 </p>
+                    </div>        
+                
+                    <div class="col-sm-6">
+                        <div class="well text-center">
+                            <div>
+                                <img id="gameImage" src="assets/images/pizza_stone.jpg">
+                            </div>
+                        </div>
+                    </div>
+                
+                    
+            </div>
+
+
+            <script>
+                
+                gameStart();
+                letterChecker();
+            </script>
+           
+        </div>
+    </body>
+    
+    
+</html>

@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Array Printing</title>
+  </head>
+  <body>
+
+
+
+    <script>
+
+
+    var guessWords = ["hello", "pizza"];
+    // USE FLOAT TO RANDOMLY SELECT WORD
+    var winNumber = 0;
+    // var gameWord = guessWords[winNumber];
+    var wordLength = 0;
+    var guessRemain = 10;
+    var usedLetters = [];
+    var anwserArray = ["_","_","_","_","_"];
+
+    var i;
+    
+
+
+    console.log(guessWords[winNumber]);
+    console.log(winNumber);
+    console.log("--------------");
+    
+    if (usedLetters.length === guessWords[winNumber].length){
+                winNumber++;
+                console.log("~~~~~~~~~~~~~~~~~~~~~~");
+                usedLetters = [];
+                var anwserArray = ["_","_","_","_","_"];
+                console.log("~~~~~~~~~~~~~~~~~~~~~~");
+                console.log("WINNER");
+                console.log(winNumber);
+                console.log(guessWords[winNumber]);
+                console.log("~~~~~~~~~~~~~~~~~~~~~~");
+        } else{
+            console.log("KEEP GOING");
+        }
+
+    document.onkeyup = function(event) {
+        keyPressed = event.key;
+        if (usedLetters.includes(keyPressed)){
+            console.log("Duplicate Letters")
+            console.log(usedLetters);
+        } else {
+            for (i=0; i< guessWords[winNumber].length; i++ ){
+                if (keyPressed === guessWords[winNumber].charAt(i)){
+                    usedLetters.push(keyPressed);
+                    anwserArray[i] = keyPressed;
+                    wordLength++
+                    console.log(anwserArray.join(" "))
+                    console.log("Added Letters");
+                    console.log("--------------");
+                }
+
+
+
+                }
+                    
+            }
+        
+    
+        
+
+        
+    }
+
+    if (usedLetters.length === guessWords[winNumber].length){
+                winNumber++;
+                console.log("~~~~~~~~~~~~~~~~~~~~~~");
+                usedLetters = [];
+                var anwserArray = ["_","_","_","_","_"];
+                console.log("~~~~~~~~~~~~~~~~~~~~~~");
+                console.log("WINNER");
+                console.log(winNumber);
+                console.log(guessWords[winNumber]);
+                console.log("~~~~~~~~~~~~~~~~~~~~~~");
+        } else{
+            console.log("KEEP GOING");
+        }
+    
+
+
+    
+        
+                    
+                    
+                    
+
+
+
+
+    </script>
+
+  </body>
+</html>
+
+
+
+
+
+
+  
+  
+  
+  
